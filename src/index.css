@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    padding-top: 50px;
+    width: 600px !important;
+    height: calc(100vh - 132px) !important;
+  }
+}
+
+.box {
+  display: flex !important;
+  align-items: center;
+}
+
+.song-title {
+  margin-left: 20px;
+}
+
+.controls {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls .button {
+  margin: 5px;
+}
+
+.current-track {
+  width: 80%;
+}
+
+.logo {
+  height: 100% !important;
+  width: 30px !important;
+  color: rgb(235, 94, 40);
+  margin: 0 10px;
+}
+.span-logo {
+  color: #eb5e28;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: #403d39 !important;
+  height: 50px;
+}
+
+.box:hover {
+  background-color: rgba(64, 61, 57, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgba(235, 94, 40, 0.1), 0 0 0 2px rgba(235, 94, 40, 0.1);
+  color: #eb5e28;
+}
+
+.footer {
+  padding: 0 !important;
+  margin-top:50px;
+  height: 30px;
+}
