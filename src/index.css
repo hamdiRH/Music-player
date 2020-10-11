@@ -17,10 +17,12 @@ code {
   .container {
     padding-top: 50px;
     width: 600px !important;
-    height: calc(100vh - 132px) !important;
   }
 }
-
+.music-player {
+  position: relative;
+  min-height: 100vh;
+}
 .box {
   display: flex !important;
   align-items: center;
@@ -69,8 +71,12 @@ code {
   color: #eb5e28;
 }
 
-.footer {
+/* .footer {
   padding: 0 !important;
-  margin-top:50px;
+  margin-top: 50px;
   height: 30px;
-}
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+} */

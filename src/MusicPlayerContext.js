@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import LostChameleon from './assets/LostChameleon.mp3';
 import Rock from './assets/TheHipsta.mp3';
 import Tobu from './assets/Tobu.mp3';
+import bensoundFunnysong from './assets/bensound-funnysong.mp3';
+import bensoundGoinghigher from './assets/bensound-goinghigher.mp3';
+import bensoundJazzyfrenchy from './assets/bensound-jazzyfrenchy.mp3';
+
 
 const MusicPlayerContext = React.createContext([{}, () => {}]);
 
@@ -20,6 +24,18 @@ const MusicPlayerProvider = (props) => {
       {
         name: 'Tobu - Such Fun',
         file: Tobu,
+      },
+      {
+        name: 'Bensound Funnysong',
+        file: bensoundFunnysong,
+      },
+      {
+        name: 'Bensound Goinghigher',
+        file: bensoundGoinghigher,
+      },
+      {
+        name: 'bensound Jazzyfrenchy',
+        file: bensoundJazzyfrenchy,
       },
     ],
     currentTrackIndex: null,

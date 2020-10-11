@@ -1,20 +1,21 @@
 import React from "react";
 import TrackList from "./components/TrackList";
 import PlayerControls from "./components/PlayerControls";
-import Nav from './components/Nav'
-import Footer from './components/Footer'
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import { MusicPlayerProvider } from "./MusicPlayerContext";
 
 function App() {
   return (
     <MusicPlayerProvider>
-      <div style={{height:"100vh"}}>
-      <Nav />
-      <div className="container">
-        <TrackList />
-        <PlayerControls />
+      <div className="music-player">
+        <Nav />
+        <div className="container">
+          <TrackList />
+          <PlayerControls />
+        </div>
+        <Footer />
       </div>
-      <Footer /></div>
     </MusicPlayerProvider>
   );
 }
